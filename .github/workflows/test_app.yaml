@@ -82,7 +82,7 @@ jobs:
         run: cargo install --path ./
 
       - name: Prepare a Flutter app for testing
-        run: python automate prepare-test-app
+        run: python automate prepare-app test
 
       - name: Build the example app
         if: matrix.target == 'linux'
