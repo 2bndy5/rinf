@@ -65,7 +65,7 @@ jobs:
         run: cargo install rinf
 
       - name: Prepare a Flutter app for testing
-        run: python automate prepare-user-app
+        run: python automate prepare-app user
 
       - name: Build the example app
         if: matrix.target == 'linux'
